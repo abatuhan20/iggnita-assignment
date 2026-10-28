@@ -1,0 +1,656 @@
+{
+  "as_of": "2026-10-26",
+  "phases": [
+    "Survey",
+    "Design",
+    "Procurement",
+    "Installation",
+    "Commissioning",
+    "Handover"
+  ],
+  "typical_phase_duration_days": {
+    "Survey": 14,
+    "Design": 45,
+    "Procurement": 90,
+    "Installation": 35,
+    "Commissioning": 10,
+    "Handover": 5
+  },
+  "projects": [
+    {
+      "id": "P-001",
+      "name": "Dilovası Textile CHP",
+      "customer": "Marmara Weaving Co.",
+      "site": "Dilovası Organised Industrial Zone",
+      "type": "CHP",
+      "project_manager": "selin.kaya",
+      "current_phase": "Commissioning",
+      "target_commissioning_date": "2026-11-15",
+      "grid_capacity_confirmed_kw": 6500,
+      "units": [
+        {
+          "id": "U1",
+          "name": "Unit 1",
+          "fuel": "natural gas",
+          "rated_kw": 2000
+        },
+        {
+          "id": "U2",
+          "name": "Unit 2",
+          "fuel": "natural gas",
+          "rated_kw": 2000
+        },
+        {
+          "id": "U3",
+          "name": "Unit 3",
+          "fuel": "natural gas",
+          "rated_kw": 2000
+        }
+      ],
+      "equipment": [
+        {
+          "id": "P001-U1-ENG",
+          "unit_id": "U1",
+          "type": "engine",
+          "model": "GX-2000 Gas Engine",
+          "serial": "GX20-24-071",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-06-02",
+            "Installed": "2026-08-21"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-U1-ALT",
+          "unit_id": "U1",
+          "type": "alternator",
+          "model": "ALT-2.1-A",
+          "serial": "A21-5530",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-05-19",
+            "Installed": "2026-08-25"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-U2-ENG",
+          "unit_id": "U2",
+          "type": "engine",
+          "model": "GX-2000 Gas Engine",
+          "serial": "GX20-24-072",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-06-02",
+            "Installed": "2026-08-21"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-U2-ALT",
+          "unit_id": "U2",
+          "type": "alternator",
+          "model": "ALT-2.1-A",
+          "serial": "A21-5531",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-05-19",
+            "Installed": "2026-08-25"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-U3-ENG",
+          "unit_id": "U3",
+          "type": "engine",
+          "model": "GX-2000 Gas Engine",
+          "serial": "GX20-24-073",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-06-02",
+            "Installed": "2026-08-21"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-U3-ALT",
+          "unit_id": "U3",
+          "type": "alternator",
+          "model": "ALT-2.1-A",
+          "serial": "A21-5532",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-02-10",
+            "Delivered": "2026-05-19",
+            "Installed": "2026-08-25"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P001-SWG",
+          "unit_id": null,
+          "type": "switchgear",
+          "model": "MV Switchgear 34.5kV",
+          "serial": "SWG-1187",
+          "status": "Installed",
+          "status_dates": {
+            "Ordered": "2026-03-01",
+            "Delivered": "2026-07-11",
+            "Installed": "2026-09-02"
+          },
+          "expected_delivery": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "T-1001",
+          "phase": "Installation",
+          "unit_id": null,
+          "title": "MV switchgear installation",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-05"
+        },
+        {
+          "id": "T-1002",
+          "phase": "Installation",
+          "unit_id": null,
+          "title": "Grid connection cabling",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-12"
+        },
+        {
+          "id": "T-1101",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Engine foundation",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1102",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Exhaust system",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1103",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Fuel connection",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1104",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Alternator mounting",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1105",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Alternator cabling",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1106",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Alternator control wiring",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1201",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Engine foundation",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1202",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Exhaust system",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1203",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Fuel connection",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1204",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Alternator mounting",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1205",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Alternator cabling",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1206",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Alternator control wiring",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1301",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Engine foundation",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1302",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Exhaust system",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1303",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Fuel connection",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1304",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Alternator mounting",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1305",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Alternator cabling",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-1306",
+          "phase": "Installation",
+          "unit_id": "U3",
+          "title": "Alternator control wiring",
+          "status": "done",
+          "assignee": "murat.demir",
+          "due": "2026-09-20"
+        },
+        {
+          "id": "T-141",
+          "phase": "Commissioning",
+          "unit_id": "U1",
+          "title": "Load test (4h at ≥95% rated)",
+          "status": "todo",
+          "assignee": "kemal.arslan",
+          "due": "2026-10-30"
+        },
+        {
+          "id": "T-142",
+          "phase": "Commissioning",
+          "unit_id": "U2",
+          "title": "Load test (4h at ≥95% rated)",
+          "status": "todo",
+          "assignee": "kemal.arslan",
+          "due": "2026-10-30"
+        },
+        {
+          "id": "T-143",
+          "phase": "Commissioning",
+          "unit_id": "U3",
+          "title": "Load test (4h at ≥95% rated)",
+          "status": "todo",
+          "assignee": "kemal.arslan",
+          "due": "2026-10-30"
+        },
+        {
+          "id": "T-1450",
+          "phase": "Commissioning",
+          "unit_id": null,
+          "title": "Commissioning report",
+          "status": "todo",
+          "assignee": "kemal.arslan",
+          "due": "2026-11-08"
+        }
+      ],
+      "documents": [
+        {
+          "id": "D-101",
+          "type": "site_survey_report",
+          "unit_id": null,
+          "title": "Site survey – Dilovası",
+          "date": "2025-11-20",
+          "by": "murat.demir"
+        },
+        {
+          "id": "D-102",
+          "type": "design_approval",
+          "unit_id": null,
+          "title": "Customer design approval rev B",
+          "date": "2026-01-28",
+          "by": "selin.kaya"
+        },
+        {
+          "id": "D-103",
+          "type": "mechanical_completion",
+          "unit_id": null,
+          "title": "Mechanical completion certificate",
+          "date": "2026-10-02",
+          "by": "murat.demir"
+        }
+      ]
+    },
+    {
+      "id": "P-002",
+      "name": "Harbour Cold Storage Standby Power",
+      "customer": "Harbour Cold Chain Ltd.",
+      "site": "Port logistics area, Warehouse 7",
+      "type": "Standby diesel",
+      "project_manager": "tom.bright",
+      "current_phase": "Procurement",
+      "target_commissioning_date": "2027-01-20",
+      "grid_capacity_confirmed_kw": 2000,
+      "units": [
+        {
+          "id": "U1",
+          "name": "Unit 1",
+          "fuel": "diesel",
+          "rated_kw": 800
+        },
+        {
+          "id": "U2",
+          "name": "Unit 2",
+          "fuel": "diesel",
+          "rated_kw": 800
+        }
+      ],
+      "equipment": [
+        {
+          "id": "P002-U1-ENG",
+          "unit_id": "U1",
+          "type": "engine",
+          "model": "DX-1000 Diesel Engine",
+          "serial": "DX10-26-0312",
+          "status": "Delivered",
+          "status_dates": {
+            "Ordered": "2026-07-01",
+            "Delivered": "2026-10-14"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P002-U2-ENG",
+          "unit_id": "U2",
+          "type": "engine",
+          "model": "DX-1000 Diesel Engine",
+          "serial": null,
+          "status": "Ordered",
+          "status_dates": {
+            "Ordered": "2026-07-01"
+          },
+          "expected_delivery": "2027-01-08",
+          "notes": "Supplier slipped delivery from 2026-11-02 (factory backlog)."
+        },
+        {
+          "id": "P002-U1-ALT",
+          "unit_id": "U1",
+          "type": "alternator",
+          "model": "ALT-1.0-S",
+          "serial": "A10-8811",
+          "status": "Delivered",
+          "status_dates": {
+            "Ordered": "2026-07-01",
+            "Delivered": "2026-09-22"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P002-U2-ALT",
+          "unit_id": "U2",
+          "type": "alternator",
+          "model": "ALT-1.0-S",
+          "serial": "A10-8812",
+          "status": "Delivered",
+          "status_dates": {
+            "Ordered": "2026-07-01",
+            "Delivered": "2026-09-22"
+          },
+          "expected_delivery": null
+        },
+        {
+          "id": "P002-SWG",
+          "unit_id": null,
+          "type": "switchgear",
+          "model": "LV ATS Panel 2500A",
+          "serial": null,
+          "status": "Ordered",
+          "status_dates": {
+            "Ordered": "2026-08-15"
+          },
+          "expected_delivery": "2026-11-30"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "T-2001",
+          "phase": "Procurement",
+          "unit_id": null,
+          "title": "Expedite U2 engine with supplier",
+          "status": "todo",
+          "assignee": "tom.bright",
+          "due": "2026-10-31"
+        },
+        {
+          "id": "T-2002",
+          "phase": "Installation",
+          "unit_id": null,
+          "title": "Plinth and bunded fuel tank",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": "2026-12-15"
+        },
+        {
+          "id": "T-2101",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Set generator on plinth",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2102",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Exhaust system",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2103",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Fuel connection",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2104",
+          "phase": "Installation",
+          "unit_id": "U1",
+          "title": "Alternator cabling",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2201",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Set generator on plinth",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2202",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Exhaust system",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2203",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Fuel connection",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        },
+        {
+          "id": "T-2204",
+          "phase": "Installation",
+          "unit_id": "U2",
+          "title": "Alternator cabling",
+          "status": "todo",
+          "assignee": "murat.demir",
+          "due": null
+        }
+      ],
+      "documents": [
+        {
+          "id": "D-201",
+          "type": "site_survey_report",
+          "unit_id": null,
+          "title": "Site survey – Warehouse 7",
+          "date": "2026-03-03",
+          "by": "murat.demir"
+        },
+        {
+          "id": "D-202",
+          "type": "design_approval",
+          "unit_id": null,
+          "title": "Customer design approval rev A",
+          "date": "2026-06-12",
+          "by": "tom.bright"
+        }
+      ]
+    },
+    {
+      "id": "P-003",
+      "name": "St. Aurelia Hospital Trigeneration",
+      "customer": "St. Aurelia Hospital Foundation",
+      "site": "Hospital energy centre, Block E",
+      "type": "Trigeneration",
+      "project_manager": "selin.kaya",
+      "current_phase": "Design",
+      "target_commissioning_date": "2027-06-30",
+      "grid_capacity_confirmed_kw": 1800,
+      "units": [
+        {
+          "id": "U1",
+          "name": "Unit 1",
+          "fuel": "natural gas",
+          "rated_kw": 1560
+        }
+      ],
+      "equipment": [],
+      "tasks": [
+        {
+          "id": "T-3001",
+          "phase": "Design",
+          "unit_id": null,
+          "title": "Electrical single-line diagram",
+          "status": "done",
+          "assignee": "ana.ruiz",
+          "due": "2026-09-30"
+        },
+        {
+          "id": "T-3002",
+          "phase": "Design",
+          "unit_id": null,
+          "title": "Absorption chiller integration",
+          "status": "todo",
+          "assignee": "ana.ruiz",
+          "due": "2026-10-15"
+        },
+        {
+          "id": "T-3003",
+          "phase": "Design",
+          "unit_id": null,
+          "title": "Customer design review meeting",
+          "status": "todo",
+          "assignee": "selin.kaya",
+          "due": "2026-11-20"
+        }
+      ],
+      "documents": [
+        {
+          "id": "D-301",
+          "type": "site_survey_report",
+          "unit_id": null,
+          "title": "Site survey – Block E",
+          "date": "2026-08-05",
+          "by": "murat.demir"
+        }
+      ]
+    }
+  ]
+}

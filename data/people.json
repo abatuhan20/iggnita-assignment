@@ -1,0 +1,27 @@
+[
+  {
+    "id": "selin.kaya",
+    "name": "Selin Kaya",
+    "role": "Project Manager"
+  },
+  {
+    "id": "tom.bright",
+    "name": "Tom Bright",
+    "role": "Project Manager"
+  },
+  {
+    "id": "ana.ruiz",
+    "name": "Ana Ruiz",
+    "role": "Design Engineer"
+  },
+  {
+    "id": "murat.demir",
+    "name": "Murat Demir",
+    "role": "Field Engineer"
+  },
+  {
+    "id": "kemal.arslan",
+    "name": "Kemal Arslan",
+    "role": "Commissioning Engineer"
+  }
+]

@@ -1,0 +1,11 @@
+**How does your model handle work going back, and why?**
+The phase belongs to the unit, not the project, so sending Unit 2 back to Design does not touch Units 1 and 3. Everything the user does is appended as an event and the current state is a fold over them. Raising NCR-014 is one `issue.raised` event: unit, target phase, reason, author, time, what it invalidates and the replacement order. Nothing is edited. "Invalid" is derived: a document is invalid *for Unit 2 only* (D-102 stays valid for Units 1 and 3), the alternator is superseded by a new record, three tasks need redoing, and Unit 2's failed test no longer counts but stays in the history. I chose this because the brief demands both "others carry on" and "never overwrite the past", and an event log gives the second for free and makes the first a matter of scoping. Unit 2 re-enters through the same `evaluateGate` as every other unit: the gates only ask whether *valid* things exist, so a re-approval, the delivered ALT-2.5-B, the redone tasks and a new test are exactly what it needs. There is no Unit-2 branch and no NCR-014 constant. The test suite raises a different issue (P-002 Unit 1, engine, NCR-020) to prove it.
+
+**What I decided about the load-test file.**
+Units normalised, MW converted, the 99999 sensor fault and the empty reading excluded, the duplicate dropped, all reported. A missing reading breaks the run. That makes U3 fail strictly, because of one absent reading at 10:45, so the import flags it as a judgement call and an engineer's sign-off (with reason) is recorded; the strict FAIL stays visible next to it.
+
+**What would I change with more time?**
+Record each unit's phase transitions as dated events from the start (the seed has none, so history starts from a baseline). Make the "depends on" relation explicit data (task → equipment) instead of keyword matching on task titles; the keyword rule is a pragmatic hack. Order the replacement alternator at design re-approval instead of at raise time. Add optimistic concurrency, and a real database once more than one person writes at once.
+
+**What did I leave out?**
+All stretch goals, authentication and roles, a re-import screen for the Unit 2 re-test (manual entry covers it), UI tests, and any validation of *who* issued a design approval. The pages are deliberately thin; the rules are in `lib/` and covered by 38 tests.
