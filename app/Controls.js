@@ -204,6 +204,7 @@ export function RaiseIssueForm({ projectId, units, phases, labels }) {
     const r = await run('raiseIssue', { ...f, invalidations, replacements });
     if (r) { setSug(null); setF({ ref: '', description: '', unitIds: [], targetPhase: 'Design', component: '' }); }
   }
+  
   return (
     <div className="card">
       <b>Raise an issue and send units back</b>
@@ -251,5 +252,22 @@ export function RaiseIssueForm({ projectId, units, phases, labels }) {
       )}
       <ErrorBox error={error} />
     </div>
+  );
+  
+}
+export function ResetButton() {
+  const router = useRouter();
+  const [error, setError] = useState(null);
+  async function reset() {
+    if (!window.confirm('Back to the seed data? The current log is kept as a .bak.jsonl file.')) return;
+    const res = await fetch('/api/reset', { method: 'POST' });
+    if (res.ok) router.refresh();
+    else setError((await res.json()).error);
+  }
+  return (
+    <>
+      <button onClick={reset}>Reset button for demo</button>
+      {error && <span className="err"> {error}</span>}
+    </>
   );
 }
